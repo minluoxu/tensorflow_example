@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-from tensorflow.examples.tutorials.mnist import input_data
-import tensorflow as tf 
-=======
 # -*- coding: utf-8 -*-
 
 from tensorflow.examples.tutorials.mnist import input_data
@@ -35,4 +31,3 @@ correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 print(sess.run(accuracy, feed_dict={x: minist.test.images,
                                       y_: minist.test.labels}))
->>>>>>> b69f7c41a08d268586cc37b6a331062e54fb4eab
